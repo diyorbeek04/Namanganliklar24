@@ -1,0 +1,783 @@
+@font-face {
+    font-family: 'Rubik 700';
+    src: url(./fonts/rubik/static/Rubik-Bold.ttf);
+}
+@font-face {
+    font-family: 'Rubik 400';
+    src: url(./fonts/rubik/static/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: 'Rubik 500';
+    src: url(./fonts/rubik/static//Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: 'Roboto 500';
+    src: url(./fonts/Roboto/Roboto-Medium.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    width: 100%;
+   
+}
+#header .container .header__top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#header .container .header__top .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .container .header__top .left .logo{
+    width: 50%;
+}
+#header .container .header__top .left .logo h1{
+    width: 100%;
+    color: #295091;
+    font-family: "Rubik 700";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(202, 202, 202, 0.5);
+    padding: 5px;
+}
+#header .container .header__top .left .price{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+#header .container .header__top .left .price p{
+    color: #7A7A7A;
+    font-family: "Rubik 400";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#header .container .header__top .left .price p span{
+    color: #285193;
+    font-family: "Rubik 500";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+#header .container .header__top form{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .container .header__top form i{
+    font-size: 30px;
+}
+#header .container .header__top form select{
+    color: #535353;
+    font-family: "Roboto 500";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #535353;
+    border-radius: 5px;
+}
+#header .container .header__top form button{
+    border-radius: 5px;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    font-family: "Rubik 500";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#header .container .header__top form button img{
+    width: 20px;
+    height: auto;
+}
+
+
+
+#header .container .header__top form .modalpod{
+    display: none;
+}
+#header .container .header__top form .modalpod-active{
+    position: absolute;
+    top: 30%;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    width: 40%;
+    height: 300px;
+    background-color: #fff;
+    z-index: 10000;
+}
+#header .container .header__top form .modalpod-active span{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 25px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 0px rgba(202, 202, 202, 1);
+    cursor: pointer;
+    color: #000;
+}
+#header .container .header__top form .modalpod-active p{
+    color: #295093;
+    text-align: center;
+    font-family: "Rubik 500";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 80px;
+    
+}
+#header .container .header__top form .modalpod-active button{
+    border-radius: 5px;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    font-family: "Rubik 500";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px auto;
+    margin-top: 35px;
+}
+#overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0.5;
+}
+.overlay-none{
+    display: none;
+}
+
+#header .container #navbar{
+    width: 100%;
+}
+#header .container #navbar ul{
+    width: 100%;
+    fill: #FFF;
+    box-shadow: 0px 5px 10px rgba(159, 159, 159, 0.19);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+#header .container #navbar ul li a{
+    color: #515151;
+    font-family: "Rubik 500";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+#banner{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+#banner img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: -20px;
+    box-shadow: 0px 2px 10px #E0E0E0;
+
+}
+
+
+
+#hero{
+    width: 100%;
+    margin-top: 50px;
+}
+#hero .container .hero{
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 5px;
+    background: #F6F6F9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#hero .container .hero .box{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#hero .container .hero .box-1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#hero .container .hero .box .box__img{
+    width: 20%;
+}
+#hero .container .hero .box .box__img img{
+    width: 100%;
+}
+#hero .container .hero .box-1 .box__img {
+    width: 15%;
+    height: auto;
+}
+#hero .container .hero .box .box__text{
+    width: 75%;
+    height: 50px;
+}
+#hero .container .hero .box .box__text p{
+    color: #000;
+    font-family: "Rubik 500";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+}
+#hero .container .hero .box .box__text p span{
+    color: #000;
+    font-family: "Rubik 500";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: -25px;
+}
+#hero .container .hero .clr{
+    width: 1px;
+    height: 50px;
+    background: #EB5569;
+}
+
+
+#news{
+    width: 100%;
+    margin-top: 30px;
+}
+#news .container #cards{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#news .container #cards .card{
+    width: 30%;
+    border: none;
+    
+}
+#news .container #cards .card h5{
+    width: 98%;
+    color: #202020;
+    font-family: "Rubik 500";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 10px;
+
+}
+#news .container #cards .card p{
+    color: #6B6D97;
+    font-family: "Rubik 400";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+
+
+#notification{
+    width: 100%;
+    margin-top: 50px;
+}
+#notification .container .notification{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background: rgba(239, 186, 84, 0.18);
+}
+#notification .container .notification .notification__text{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 15px;
+}
+#notification .container .notification .notification__text img{
+    width: 31px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#notification .container .notification .notification__text p{
+    color: #000;
+    font-family: "Rubik 500";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 18px;
+}
+#notification .container .notification .notification__button{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#notification .container .notification .notification__button button{
+    border-radius: 10px;
+    background: var(--ss, linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.90) 88.43%));
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: "Rubik 500";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 15px;
+}
+
+#moreNews{
+    width: 100%;
+    margin-top: 50px;
+}
+#moreNews .container .moreNews{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+#moreNews .container .moreNews #cards__left{
+    width: 65%;
+}
+#moreNews .container .moreNews #cards__left .moreCard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid #a9b3c3;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(159, 159, 159, 0.19);
+
+}
+#moreNews .container .moreNews #cards__left .moreCard .card__image{
+    width: 29%;
+}
+#moreNews .container .moreNews #cards__left .moreCard .card__image img{
+    width: 100%;
+}
+#moreNews .container .moreNews #cards__left .moreCard .card__text{
+    width: 68%;
+}
+#moreNews .container .moreNews #cards__left .moreCard .card__text h3{
+    width: 100%;
+    color: #202020;
+    font-family: "Rubik 500";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#moreNews .container .moreNews #cards__left .moreCard .card__text h5{
+    width: 100%;
+    color: #434343;
+    font-family: "Rubik 400"; 
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#moreNews .container .moreNews #cards__left .moreCard .card__text .date__group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+#moreNews .container .moreNews #cards__left .moreCard .card__text .date__group img{
+    width: 18px;
+    height: 20px;
+}
+#moreNews .container .moreNews #cards__left .moreCard .card__text .date__group p{
+    color: #7688A4;
+    font-family: "Rubik 400";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 18px;
+}
+#moreNews .container .moreNews #cards__right {
+    width: 30%;
+    border-radius: 5px;
+}
+#moreNews .container .moreNews #cards__right #top{
+    width: 100%;
+    border-radius: 5px;
+    background: #F6F6F9;
+    margin-bottom: 50px;
+}
+#moreNews .container .moreNews #cards__right #top h1{
+    color: #202020;
+    font-family: "Rubik 500";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#moreNews .container .moreNews #cards__right #top h5{
+    color: #202020;
+    font-family: "Rubik 400";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#moreNews .container .moreNews #cards__right #top p{
+    color: #7688A4;
+    font-family: "Rubik 400";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#moreNews .container .moreNews #cards__right #top hr{
+    width: 90%;
+    height: 4px;
+    background: #b0aeae;
+    margin: 10px auto;
+}
+#moreNews .container .moreNews #cards__right img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    
+}
+#button{
+    position: relative;
+}
+#button .container .button{
+    color: #FFF;
+    font-family: "Rubik 500";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 5px;
+    background: #295093;
+    padding: 10px 32px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 30%;
+    bottom: 0px;
+}
+
+#app{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#app .container .app{
+    width: 100%;
+    border-radius: 5px;
+    background: #F6F6F9;
+    height: 214px;
+    position: relative;
+    display: flex;
+}
+#app .container .app .img{
+    position: absolute;
+    width: 180px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    bottom: 0;
+    left: 80px;
+    box-shadow: 30px -10px 30px rgba(62, 53, 53, 0.3);
+
+}
+#app .container .app .app__text{
+    width: 47%;
+    padding-top: 60px;
+    margin-left: 300px;
+}
+#app .container .app .app__text h3{
+    color: #295093;
+    font-family: "Rubik 500";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#app .container .app .app__text p{
+    color: #333;
+    font-family: "Rubik 500";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#app .container .app .app__button{
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#app .container .app .app__button img{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+#footer{
+    width: 100%;
+    background: #295093;
+    position: relative;
+}
+#footer .container .footer__top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+#footer .container .footer__top h1{
+    color: #FFF;
+    font-family: "Rubik 700";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #133C82;
+}
+#footer .container .footer__top p{
+    color: #FFF;
+    font-family: "Rubik 500";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 5px;
+    margin-left: 150px;
+}
+
+#footer .container .footer__top  button{
+    color: #295093;
+    font-family: "Rubik 500";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 5px;
+    background: #FFF;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -8px;
+}
+#footer .container .footer__top button img{
+    width: 20px;
+    height: auto;
+}
+
+#footer .container .footer__top  .modalpod1{
+    display: none;
+}
+#footer .container .footer__top  .modalpod1-active{
+    position: absolute;
+    bottom: 250px;
+    right: 0;
+    left: 30%;
+    width: 40%;
+    height: 300px;
+    background-color: #fff;
+    z-index: 10000;
+}
+#footer .container .footer__top  .modalpod1-active span{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 25px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 0px rgba(202, 202, 202, 1);
+    cursor: pointer;
+    color: #000;
+}
+#footer .container .footer__top  .modalpod1-active p{
+    color: #295093;
+    text-align: center;
+    font-family: "Rubik 500";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 80px;
+    margin-left: 0px;
+}
+#footer .container .footer__top  .modalpod1-active button{
+    border-radius: 5px;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    font-family: "Rubik 500";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px auto;
+    margin-top: 35px;
+}
+#overlay1{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0.5;
+}
+.overlay1-none{
+    display: none;
+}
+
+#footer .container hr{
+    width: 100%;
+    height: 3px;
+    background: #133C82;
+}
+#footer .container .footer__bottom{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+#footer .container .footer__bottom p{
+    width: 30%;
+    color: #FFF;
+    font-family: "Rubik 400";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#footer .container .footer__bottom p span{
+    width: 30%;
+    color: #FFF;
+    font-family: "Rubik 500";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#footer .container .footer__bottom ul{
+    width: 30%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footer .container .footer__bottom ul li{
+    color: #FFF;
+    font-family: "Rubik 500";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

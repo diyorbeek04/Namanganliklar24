@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Namanganliklar 24</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="left">
+                    <div class="logo">
+                        <h1>NAMANGANLIKLAR24</h1>
+                    </div>
+                    <div class="price">
+                        <p><span>$</span> 10137.2</p>
+                        <p><span>P</span> 138.26</p>
+                        <p><span>E</span> 10988.72</p>
+                    </div>
+                </div>
+                <form>
+                    <i class='bx bx-search-alt-2' ></i>
+                    <select>
+                        <option selected disabled>Lan</option>
+                        <option value="ru">Ru</option>
+                        <option value="en">En</option>
+                        <option value="uz">Uz</option>
+                    </select>
+                    <button id="buttonOpen"><img src="./images/header/cib_telegram@2x.png" alt="#"> Подписатся</button>
+                    <div id="podModal" class="modalpod modalpod-active">
+                       <span id="buttonClose">&times;</span>
+                        <p>Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</p>
+                        <button><img src="./images/header/cib_telegram@2x.png" alt="#"> Подписатся</button>
+                    </div>
+                    <div id="overlay" class="overlay overlay-none">
+        
+                    </div>
+                </form>
+            </div>
+
+            <div id="navbar">
+                <ul>
+                    <li><a href="#">Узбекистана</a></li>
+                    <li><a href="#">Мир</a></li>
+                    <li><a href="#">Экономика</a></li>
+                    <li><a href="#">Политика</a></li>
+                    <li><a href="#">Общество</a></li>
+                    <li><a href="#">Технологии</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Культура</a></li>
+                    <li><a href="#">Происшествия</a></li>
+                    <li><a href="#">Туризм</a></li>
+                </ul>
+            </div>
+
+            <div id="banner">
+                <img src="./images/header/nrg-banner.jpg" alt="NRG banner">
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="hero">
+        <div class="container">
+            <div class="hero">
+                <div class="box box-1">
+                    <div class="box__img">
+                        <img src="./images/hero/icon-covid.png" alt="">
+                    </div>
+                    <div class="box__text">
+                        <p>Коронавирус COVID-19 в Узбекистане</p>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="box">
+                    <div class="box__img">
+                        <img src="./images/hero/icon-infected.svg" alt="">
+                    </div>
+                    <div class="box__text">
+                        <p>Инфицированы <span>2753</span></p>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="box">
+                    <div class="box__img">
+                        <img src="./images/hero/icon-recovered.svg" alt="">
+                    </div>
+                    <div class="box__text">
+                        <p>Выздоровели <span>2245</span></p>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="box">
+                    <div class="box__img">
+                        <img src="./images/hero/icon-dead.svg" alt="">
+                    </div>
+                    <div class="box__text">
+                        <p>Умерли <span>12</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="news">
+        <div class="container content">
+            <div id="cards">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="notification">
+        <div class="container">
+            <div class="notification">
+                <div class="notification__text">
+                    <img src="./images/notification/bell-icon@2x.png" alt="">
+                    <p>Хотите узнать новости первыми? подключите уведомления!</p>
+                </div>
+                <div class="notification__button">
+                    <button>Включит  уведомления!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="moreNews">
+        <div class="container">
+            <div class="moreNews">
+                <div id="cards__left">      
+                
+                </div>
+                <div id="cards__right">     
+                    <div id="top">
+                        <h1>Cамые популярные новости</h1>
+                    </div>
+                    <img src="./images/right/Rectangle 41.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="button">
+        <div class="container">
+            <button class="button">Больше новостей</button>
+        </div>
+    </div>
+
+    <div id="app">
+        <div class="container">
+            <div class="app">
+                <img class="img" src="./images/app/1.png" alt="">
+                <div class="app__text">
+                    <h3>Всегда будьте в курсе последних новостей!</h3>
+                    <p>Установите мобильное приложение NAMANGANLIKLAR24 и все новости в вашем кармане!</p>
+                </div>
+                <div class="app__button">
+                    <img src="./images/app/googleplay 1.png" alt="">
+                    <img src="./images/app/appstore 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <h1>NAMANGANLIKLAR24</h1>
+                <p>Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</p>
+                
+                <button id="buttonOpen1"><img src="./images/footer/icon-telegram-blue.svg" alt="#"> Подписатся</button>
+                <div id="podModal1" class="modalpod1 modalpod1-active">
+                    <span id="buttonClose1">&times;</span>
+                    <p>Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</p>
+                    <button><img src="./images/header/cib_telegram@2x.png" alt="#"> Подписатся</button>
+                </div>
+                <div id="overlay1" class="overlay1 overlay1-none">
+    
+                </div>
+            </div>
+            <hr>
+            <div class="footer__bottom">
+                <p>
+                    <span>О сайте </span> <br><br>
+                    Воспроизводство, копирование, тиражирование, распростране ние и иное использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
+                </p>
+                <ul>
+                    <li>Информация о сайте</li>
+                    <li>Напишите нам</li>
+                    <li>Реклама</li>
+                    <li>Прислать новость</li>
+                </ul>
+                <ul>
+                    <li>Использование материалов</li>
+                    <li>Темы дня</li>
+                    <li>Наша команда</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/news.js"></script>
+<script src="./js/moreNews.js"></script>
+<script src="./js/right.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
