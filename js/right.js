@@ -19,7 +19,6 @@ let right = [
         rightData: "По факту прорыва Сардобинского водохранилища возбуждено уголовное дело",
         rightDate: "11:31 / 15.05.2020"
     }
-
 ]
 
 let rightCards = document.querySelector("#top")

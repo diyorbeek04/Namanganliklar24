@@ -20,6 +20,8 @@ body{
     padding: 0;
 }
 
+
+
 #header{
     width: 100%;
    
@@ -160,7 +162,6 @@ body{
     font-weight: 500;
     line-height: normal;
     padding-top: 80px;
-    
 }
 #header .container .header__top form .modalpod-active button{
     border-radius: 5px;
@@ -197,7 +198,6 @@ body{
 .overlay-none{
     display: none;
 }
-
 #header .container #navbar{
     width: 100%;
 }
@@ -221,6 +221,8 @@ body{
     text-decoration: none;
 }
 
+
+
 #banner{
     width: 100%;
     height: auto;
@@ -233,7 +235,6 @@ body{
     padding: 0;
     margin-left: -20px;
     box-shadow: 0px 2px 10px #E0E0E0;
-
 }
 
 
@@ -265,7 +266,6 @@ body{
     justify-content: center;
     gap: 10px;
 }
-
 #hero .container .hero .box .box__img{
     width: 20%;
 }
@@ -306,6 +306,8 @@ body{
 }
 
 
+
+
 #news{
     width: 100%;
     margin-top: 30px;
@@ -320,7 +322,6 @@ body{
 #news .container #cards .card{
     width: 30%;
     border: none;
-    
 }
 #news .container #cards .card h5{
     width: 98%;
@@ -331,7 +332,6 @@ body{
     font-weight: 500;
     line-height: normal;
     padding-top: 10px;
-
 }
 #news .container #cards .card p{
     color: #6B6D97;
@@ -400,6 +400,9 @@ body{
     line-height: normal;
     padding: 10px 15px;
 }
+
+
+
 
 #moreNews{
     width: 100%;
@@ -523,7 +526,6 @@ body{
     width: 100%;
     height: auto;
     margin-top: 20px;
-    
 }
 #button{
     position: relative;
@@ -545,6 +547,10 @@ body{
     left: 30%;
     bottom: 0px;
 }
+
+
+
+
 
 #app{
     width: 100%;
@@ -606,7 +612,6 @@ body{
 
 
 
-
 #footer{
     width: 100%;
     background: #295093;
@@ -640,7 +645,6 @@ body{
     padding-top: 5px;
     margin-left: 150px;
 }
-
 #footer .container .footer__top  button{
     color: #295093;
     font-family: "Rubik 500";
@@ -663,7 +667,6 @@ body{
     width: 20px;
     height: auto;
 }
-
 #footer .container .footer__top  .modalpod1{
     display: none;
 }
